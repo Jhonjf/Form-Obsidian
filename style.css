@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.form-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    text-align: center;
+    width: 350px;
+}
+
+.form-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-title span {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.google-btn {
+    background-color: #4285F4;
+    color: white;
+}
+
+.github-btn {
+    background-color: #24292F;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #6200EE;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-icon {
+    width: 20px;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.separador div {
+    width: 80px;
+    height: 3px;
+    background-color: #555;
+}
+
+.separador span {
+    font-size: 18px;
+    color: #bbb;
+}
+
+
+input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #222;
+    color: white;
+}
+
+
+@keyframes fadeGengar {
+    0% { opacity: 0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+
+#particles-js {
+    position: absolute;
+    background: url('gengar-background.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    animation: fadeGengar 10s infinite ease-in-out;
+}
+

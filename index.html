@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login com Google e GitHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            <p class="form-title">Bem-vindo,<span>Faça login para continuar</span></p>
+
+            <button class="btn google-btn">
+                <img src="google.png" alt="Google Logo" class="btn-icon" />
+                Continuar com Google
+            </button>
+
+            <button class="btn github-btn">
+                <img src="github.png" alt="GitHub Logo" class="btn-icon" />
+                Continuar com GitHub
+            </button>
+
+            <div class="separador">
+                <div></div>
+                <span>OU</span>
+                <div></div>
+            </div>
+
+            <input type="email" placeholder="Email" required>
+            <button class="btn submit-btn">Entrar</button>
+        </form>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="main.js"></script>
+</body>
+</html>
